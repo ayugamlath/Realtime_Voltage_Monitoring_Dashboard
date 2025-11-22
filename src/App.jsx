@@ -88,11 +88,20 @@ function App() {
 
   return (
     <div className={`app-shell status-${statusVariant}`}>
-      <header className="top-bar">
-        <div>
+      <header className="top-bar ">
+        <div className=''>
           <h1>Real-Time Voltage Monitor</h1>
           <p>Live updates fetched directly from Firebase Realtime Database</p>
         </div>
+          <div class="toggle-switch-wrapper">
+  <div class="toggle-switch">
+    <input class="guard" type="checkbox"></input>
+    <input class="switch" type="checkbox"></input>
+    <span class="knob"></span>
+    <span class="light"></span>
+        </div>     
+  </div>
+
       </header>
 
       <main className="dashboard">
